@@ -1,0 +1,149 @@
+body{
+    background-color: rgba(138, 138, 138, 0.1);
+    .wrapper{
+        // background-color: rgba(100,100,100,0.10);
+        height: 100%;
+      main{
+        width: 100vw;
+        height:30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0% 4%;
+        .portfolio{
+            width: 100%;
+            margin-top: 30px;
+            .swiper-container {
+                width: 100%;
+                height: auto;
+                margin-top: 80px;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        width: 30%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        :hover{
+                            transform:scale(1.05);
+                            border: 5px solid #ffd100;
+                            border-top: 12px solid #ffd100;
+                            border-bottom: 12px solid #ffd100;
+                        }
+                        img{
+                            width: 80%;
+                            height: auto;
+                        }
+                    }
+                }
+                .swiper-button-prev,.swiper-button-next{
+                    background-image: none;
+                    .fas{
+                        font-size: 45px;
+                        color: rgba(0,0,0,0.8);
+                    }
+                }
+                .swiper-pagination-bullet-active{
+                    background: #ffd100;
+                }
+            }  
+        }
+        }
+    }
+}
+
+/////////////////////Responsive////////////////////////////////
+
+// GSM //
+
+@media only screen and (max-width: 1000px){
+    body{
+        .wrapper{
+          main{
+            .portfolio{
+                width: 100%;
+                .swiper-container {
+                    width: 80%;
+                    height: auto;
+                    margin-top: 80px;
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            :hover {
+                                border: 5px solid #ffd100;
+                                border-top: 12px solid #ffd100;
+                                border-bottom: 12px solid #ffd100;
+                            }
+                            img{
+                                max-width: 80%;
+                                height: auto;
+                            }
+                        }
+                    }
+                    .swiper-button-prev,.swiper-button-next{
+                        background-image: none;
+                        .fas{
+                            font-size: 45px;
+                            color: rgba(0,0,0,0.8);
+                        }
+                    }
+                    .swiper-pagination-bullet-active{
+                        background: #ffd100;
+                    }
+                }  
+            }
+            }
+        }
+    }
+
+}
+
+// Tablette //
+
+@media only screen and (max-width: 560px){
+    body{
+        .wrapper{
+          main{
+            .portfolio{
+                width: 100%;
+                .swiper-container {
+                    width: 100%;
+                    height: auto;
+                    margin-top: 80px;
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            :hover {
+                                border: 5px solid #ffd100;
+                                border-top: 12px solid #ffd100;
+                                border-bottom: 12px solid #ffd100;
+                            }
+                            img{
+                                max-width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                    .swiper-button-prev,.swiper-button-next{
+                        background-image: none;
+                        .fas{
+                            font-size: 45px;
+                            color: rgba(0,0,0,0.8);
+                        }
+                    }
+                    .swiper-pagination-bullet-active{
+                        background: #ffd100;
+                    }
+                }  
+            }
+            }
+        }
+    }
+
+}
